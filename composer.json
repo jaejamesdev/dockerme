@@ -1,0 +1,20 @@
+{
+    "name": "jaejamesdev/dockerme",
+    "description": "A quick and simple composer package to download some docker files and get you up and running with docker in a jiffy!",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "require": {},
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "jaejamesdev\\dockerme\\LaravelCloseToServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "JaeJamesDev\\DockerMe\\": "src/"
+        }
+    }
+}
