@@ -1,7 +1,7 @@
 {
     "name": "jaejamesdev/dockerme",
     "description": "A quick and simple composer package to download some docker files and get you up and running with docker in a jiffy!",
-    "type": "composer-plugin",
+    "type": "project",
     "license": "MIT",
     "require": {},
     "minimum-stability": "dev",
