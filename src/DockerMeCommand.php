@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace JaeJamesDev\DockerMe;
 
 use Exception;
 use Illuminate\Console\Command;
@@ -65,9 +65,9 @@ class DockerMeCommand extends Command
             try {
                 echo "Hmmmm... Something Went Wrong! Attempting To Save Log...\r\n";
                 file_put_contents('docker-me-log.txt', $e->getMessage());
-                echo "Saved Error To docker-me-log.txt, Please Report Error On: https://github.com/jaejamesdev/dockerme/issues";
+                echo "Saved Error To docker-me-log.txt, Please Report Error On: https://github.com/jaejamesdev/dockerme/issues\r\n";
             } catch (Exception $e) {
-                echo "Sorry, We Couldn't Save To The Log File :( Please Paste The Below Exception On: https://github.com/jaejamesdev/dockerme/issues";
+                echo "Sorry, We Couldn't Save To The Log File :( Please Paste The Below Exception On: https://github.com/jaejamesdev/dockerme/issues\r\n";
                 echo $e->getMessage();
             }
         }
